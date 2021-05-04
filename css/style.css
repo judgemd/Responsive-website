@@ -189,3 +189,123 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* Home Section */
+
+.home {
+  background: #000000;
+  background: linear-gradient(to right, #161616, #000000);
+  padding: 200px 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.home-heading {
+  font-size: 100px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.main-btn {
+  font-size: 1.8rem;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .main-btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .main-btn:hover {
+    color: #fff;
+  }
+  
+  .main-btn:hover:after {
+    width: 100%;
+  }
+.home-heading span {
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}
+
+.home-description {
+  font-size: 60px;
+  background: #da22ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #9114ff,
+    #da22ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f0eff,
+    #da22ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.lighlight {
+  border-bottom: 4px solid rgba(132, 0, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .home-heading {
+    font-size: 60px;
+  }
+
+  .home-description {
+    font-size: 40px;
+  }
+}
