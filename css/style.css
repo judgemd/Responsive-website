@@ -213,6 +213,7 @@
   font-size: 100px;
   margin-bottom: 24px;
   color: #fff;
+  animation-delay: 300ms;
 }
 
 .home-heading span {
@@ -252,6 +253,7 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  animation-delay: 350ms;
 }
 
 .highlight {
@@ -344,6 +346,7 @@
   position: relative;
   transition: all 0.35s;
   outline: none;
+  animation-delay: 400ms;
 }
 
 .main-btn a {
